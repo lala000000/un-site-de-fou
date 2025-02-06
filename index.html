@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id ="nav">
+        <div class ="burger" id ="burger"></div>
+        <li><a href="">Acceuil</a></li>
+        <li><a href="">A propos</a></li>
+        <li><a href="">Galerie</a></li>
+        <li><a href="">Contact</a></li>
+    </nav>
+    <script>
+        const burger = document.getElementById("burger")
+        burger.addEventListener("click", () => {
+            burger.classList.toggle('open')
+            nav.classList.toggle('navopen')
+        })
+    </script>
+</body>
+
+</html>
